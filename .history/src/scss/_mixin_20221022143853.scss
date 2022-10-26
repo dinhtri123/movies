@@ -1,0 +1,8 @@
+@mixin flex($alignItem, $justifyContent) {
+  display: flex;
+  align-items: $alignItem;
+  justify-content: $justifyContent;
+}
+@mixin overlay {
+  background-color: rgba($color: #000, $alpha: 0.6);
+}

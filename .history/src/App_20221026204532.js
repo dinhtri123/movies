@@ -1,0 +1,33 @@
+import { Routes, Route } from "react-router-dom";
+import Banner from "./components/banner/Banner";
+import Main from "./components/layout/Main";
+import HomePage from "./page/HomePage";
+import MovieDetailsPage from "./page/MovieDetailsPage";
+import MoviePage from "./page/MoviePage";
+const 
+function App() {
+  return (
+    <>
+      <Routes>
+        <Route element={<Main></Main>}>
+          <Route
+            path="/"
+            element={
+              <>
+                <Banner></Banner>
+                <HomePage></HomePage>
+              </>
+            }
+          ></Route>
+          <Route path="/movie" element={<MoviePage></MoviePage>}></Route>
+          <Route
+            path="/movie/:movieId"
+            element={<MovieDetailsPage></MovieDetailsPage>}
+          ></Route>
+        </Route>
+      </Routes>
+    </>
+  );
+}
+
+export default App;

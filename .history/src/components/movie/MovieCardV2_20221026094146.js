@@ -1,0 +1,1 @@
+<LoadingSkeleton width="100px" height='50px' radius='5px'></LoadingSkeleton>

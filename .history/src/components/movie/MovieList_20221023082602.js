@@ -1,0 +1,29 @@
+import React from "react";
+import styled from "styled-components";
+import MovieCard from "./MovieCard";
+import useSWR from "swr";
+import { fetcher } from "../../apiConfig";
+const MovieListStyles = styled.div`
+${props => props.upcoming && css};
+  display: flex;
+  flex-direction: column;
+  gap: 40px 0px;
+`;
+const MovieList = ({ type }) => {
+  const { data } = useSWR(
+    `https://api.themoviedb.org/3/movie/${type}?api_key=bee9d365514775f0a6d69d0ecb510c45`,
+    fetcher
+  );
+  const movies = data?.results || [];
+  console.log(movies);
+  return (
+    <MovieListStyles>
+      {movies.length > 0 &&
+        movies
+          .slice(0, 3)
+          .map((item) => <MovieCard key={item.id} item={item}></MovieCard>)}
+    </MovieListStyles>
+  );
+};
+
+export default MovieList;
