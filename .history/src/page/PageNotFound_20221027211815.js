@@ -59,7 +59,7 @@ const PageNotFound = () => {
   return (
     <PageNotFoundStyles>
       <div className="page-content">
-        <img src="/public/error.png" alt="notfound" className="image" />
+        <img src="//error.png" alt="notfound" className="image" />
         <h1 className="heading">404 - Looks like you're lost.</h1>
         <p className="description">
           Maybe this page used to exist or you just spelled something wrong.

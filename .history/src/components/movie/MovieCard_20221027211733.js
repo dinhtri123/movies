@@ -127,7 +127,7 @@ const MovieCard = ({ item, cate = "upcoming", className = "" }) => {
         </div>
         <div className="star">
           <span className="number">{vote_average.toFixed(1)}</span>
-          <img src="/public/star.png" alt="" className="icon-star" />
+          <img src="/star.png" alt="" className="icon-star" />
         </div>
       </div>
     </MovieCardStyles>
