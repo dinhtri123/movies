@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import imgError from "../img/error.png";
+
 const PageNotFoundStyles = styled.div`
   height: 100vh;
   display: flex;

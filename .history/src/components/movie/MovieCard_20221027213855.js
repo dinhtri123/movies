@@ -126,7 +126,7 @@ const MovieCard = ({ item, cate = "upcoming", className = "" }) => {
         </div>
         <div className="star">
           <span className="number">{vote_average.toFixed(1)}</span>
-          <img src="https://affaso.com/wp-content/uploads/2020/06/5-point-stars-png-star-icon-flat-11562958768wpf63hu4tq.png" alt="" className="icon-star" />
+          <img src="https://w7.pngwing.com/pngs/759/561/png-transparent-star-icon-collection-star-five-pointed-star-favorite-logo.png" alt="" className="icon-star" />
         </div>
       </div>
     </MovieCardStyles>

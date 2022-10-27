@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styled, { css } from "styled-components";
 import { tmdbAPI } from "../../apiConfig";
 import LoadingSkeleton from "../loading/LoadingSkeleton";
+import iconStar from "/src/img/"
 const MovieCardStyles = styled.div`
   cursor: pointer;
   ${(props) =>
@@ -126,7 +127,7 @@ const MovieCard = ({ item, cate = "upcoming", className = "" }) => {
         </div>
         <div className="star">
           <span className="number">{vote_average.toFixed(1)}</span>
-          <img src="https://affaso.com/wp-content/uploads/2020/06/5-point-stars-png-star-icon-flat-11562958768wpf63hu4tq.png" alt="" className="icon-star" />
+          <img src={iconStar} alt="" className="icon-star" />
         </div>
       </div>
     </MovieCardStyles>
