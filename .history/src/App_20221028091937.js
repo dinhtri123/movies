@@ -28,7 +28,7 @@ function App() {
             element={<MovieDetailsPage></MovieDetailsPage>}
           ></Route>
         </Route>
-        <Route path="movie/*" element={<PageNotFound></PageNotFound>}></Route>
+        <Route path="*" element={<PageNotFound></PageNotFound>}></Route>
       </Routes>
     </>
   );

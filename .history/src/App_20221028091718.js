@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route element={<Main></Main>}>
           <Route
-            path="movie/"
+            path="movies/"
             element={
               <>
                 <Banner></Banner>
@@ -22,13 +22,13 @@ function App() {
               </>
             }
           ></Route>
-          <Route path="movie/movie" element={<MoviePage></MoviePage>}></Route>
+          <Route path="movies/movie-page" element={<MoviePage></MoviePage>}></Route>
           <Route
-            path="movie/movie/:movieId"
+            path="movies/movie-/:movieId"
             element={<MovieDetailsPage></MovieDetailsPage>}
           ></Route>
         </Route>
-        <Route path="movie/*" element={<PageNotFound></PageNotFound>}></Route>
+        <Route path="*" element={<PageNotFound></PageNotFound>}></Route>
       </Routes>
     </>
   );
