@@ -24,7 +24,7 @@ function App() {
           ></Route>
           <Route path="movies/movie-page" element={<MoviePage></MoviePage>}></Route>
           <Route
-            path="movies/movie-details-page/:movieId"
+            path="movies/movie/:movieId"
             element={<MovieDetailsPage></MovieDetailsPage>}
           ></Route>
         </Route>
