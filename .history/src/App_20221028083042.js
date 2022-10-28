@@ -22,9 +22,9 @@ function App() {
               </>
             }
           ></Route>
-          <Route path="movies/movie" element={<MoviePage></MoviePage>}></Route>
+          <Route path="/movie" element={<MoviePage></MoviePage>}></Route>
           <Route
-            path="movies/movie/:movieId"
+            path="/movie/:movieId"
             element={<MovieDetailsPage></MovieDetailsPage>}
           ></Route>
         </Route>
