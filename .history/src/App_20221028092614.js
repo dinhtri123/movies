@@ -24,11 +24,11 @@ function App() {
           ></Route>
           <Route path="movies/movies-page" element={<MoviePage></MoviePage>}></Route>
           <Route
-            path="movies/movies-details-page/:movieId"
+            path="movies/movie-details-page/:movieId"
             element={<MovieDetailsPage></MovieDetailsPage>}
           ></Route>
         </Route>
-        <Route path="movies/*" element={<PageNotFound></PageNotFound>}></Route>
+        <Route path="movie/*" element={<PageNotFound></PageNotFound>}></Route>
       </Routes>
     </>
   );
