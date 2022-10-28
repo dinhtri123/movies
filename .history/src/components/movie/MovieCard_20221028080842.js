@@ -130,7 +130,7 @@ const MovieCard = ({ item, cate = "upcoming", className = "" }) => {
         </div>
         <div className="star">
           <span className="number">{vote_average.toFixed(1)}</span>
-          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
         </div>
       </div>
     </MovieCardStyles>

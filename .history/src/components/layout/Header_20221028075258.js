@@ -80,13 +80,13 @@ const HeaderStyles = styled.div`
       font-size: 16px;
     }
     .profile {
-      width: 28px;
-      height: 28px;
+      width: 25px;
+      height: 25px;
     }
     .menu {
       gap: 0px 10px;
       .nav-item {
-        font-size: 12px;
+        font-size: 10px;
       }
     }
   }

@@ -4,6 +4,10 @@ import styled, { css } from "styled-components";
 import { tmdbAPI } from "../../apiConfig";
 import LoadingSkeleton from "../loading/LoadingSkeleton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  solid,
+  icon,
+} from "@fortawesome/fontawesome-svg-core/import.macro";
 const MovieCardStyles = styled.div`
   cursor: pointer;
   ${(props) =>
@@ -20,9 +24,6 @@ const MovieCardStyles = styled.div`
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  ion-icon {
-    color: #fce700;
-  }
   .image {
     position: absolute;
     inset: 0;
@@ -130,7 +131,7 @@ const MovieCard = ({ item, cate = "upcoming", className = "" }) => {
         </div>
         <div className="star">
           <span className="number">{vote_average.toFixed(1)}</span>
-          <ion-icon name="star"></ion-icon>
+          <FontAwesomeIcon icon="fa-solid fa-star" className="icon-star" />
         </div>
       </div>
     </MovieCardStyles>

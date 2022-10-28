@@ -20,9 +20,6 @@ const MovieCardStyles = styled.div`
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  ion-icon {
-    color: #fce700;
-  }
   .image {
     position: absolute;
     inset: 0;
@@ -130,7 +127,7 @@ const MovieCard = ({ item, cate = "upcoming", className = "" }) => {
         </div>
         <div className="star">
           <span className="number">{vote_average.toFixed(1)}</span>
-          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
         </div>
       </div>
     </MovieCardStyles>

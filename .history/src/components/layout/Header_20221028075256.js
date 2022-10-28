@@ -77,16 +77,16 @@ const HeaderStyles = styled.div`
   @media screen and (max-width: 480px) {
     padding: 5px 0px;
     .logo {
-      font-size: 16px;
+      font-size: 5px;
     }
     .profile {
-      width: 28px;
-      height: 28px;
+      width: 25px;
+      height: 25px;
     }
     .menu {
       gap: 0px 10px;
       .nav-item {
-        font-size: 12px;
+        font-size: 10px;
       }
     }
   }
